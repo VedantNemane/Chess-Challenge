@@ -12,13 +12,11 @@ public class MyBot : IChessBot
     public static bool minimax(Board board, int depth, int maximisingPlayer) { 
         if (!(depth != 0 && !board.IsInCheckmate() && !board.IsInsufficientMaterial() && !board.IsInCheck()))
         {
-            return board.IsWhiteToMove;
+            return true;
         }
 
         if (maximisingPlayer) { 
-        
+            
         }
-
-        return true;
     }
 }
